@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    text-align: center;
+    width: 100%;
+    padding: 1.2rem;
+}
+h1{
+    color: rgb(177, 7, 106);
+    margin-bottom: 18px;
+    font-size: 2rem;
+
+}
+
+.board{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+.list{
+    background-color: #06521262;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    min-height: 400px;
+    box-shadow: 0 4px 5px rgb(29, 125, 170);
+}
+.list h2{
+    color: rgb(146, 94, 31);
+    margin: 5px 0px 10px 2px;
+    font-size: 1.5rem;
+}
+.card{
+    background-color: rgb(143, 136, 115);
+color: rgba(66, 20, 32, 0.699);
+margin: auto;
+padding: auto;
+cursor: grab;
+box-shadow: 2px 3px 3px rgb(139, 151, 26);
+transition: transform 0.2s,box-shadow 0.2s;
+}
+.card:active{
+    cursor: grabbing;
+    transform: scale(1.05);
+    box-shadow: 2px 3px 3px rgb(59, 65, 5);
+}
+
+.list.over{
+    background-color: #5f2918;
+}
+@media(max-width:500px){
+.board{
+    flex-direction: column;
+    align-items: center;
+}
+.list{
+    width: auto;
+    margin-bottom: 30px;
+}
+}
+

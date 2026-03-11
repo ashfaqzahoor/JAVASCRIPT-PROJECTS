@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div  id="front" class="screen active">
+            <h1 >Let's test your knowledge</h1>
+            <p>Are you read?if yes press button</p>
+            <button id="start-app">Ready</button>
+
+        </div>
+
+        <div id="second-screen" class="screen ">
+            <div id="question-in">
+                <h4>Question:</h4></div>
+            <div id="page-count">
+              <p> question no<span id="question-no">0</span>
+                total<span id="total-question">5</span></p>
+            </div>
+<div id="answer">
+    <label for="answerQuestion">type your answer</label>
+    <input type="text" id="answerQuestion" required >
+
+</div>
+<div >
+    <button id="showing">show answer</button>
+    <p id="answer-is"></p>
+
+</div>
+<!-- <div>
+<button id="end-state">lets end</button>
+        </div> --></div>
+
+        <div id="end" class="screen ">
+            <h3>thanks</h3>
+            <p>it was a wonderful journey visit again</p>
+        
+<div >
+    <button id="restart-btn">restart</button></div>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

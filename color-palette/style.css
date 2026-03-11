@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg,#83a8df,#c3cfe2);
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container{
+    background-color:#fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width:1000px;
+    box-shadow: 0 10px 25px rgb(114, 4, 224);
+}
+h1{
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: rgba(19, 16, 206, 0.63);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #1754b1;
+}
+
+#generate-btn{
+    background: linear-gradient(45deg,rgba(59, 14, 14, 0.445),rgb(10, 126, 172));
+    color: rgb(201, 9, 127);
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem ;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 0.7;
+    cursor: pointer;
+
+}
+
+#generate-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 3px 8px 13px 2px rgb(146, 51, 51);
+}
+#generate-btn:active{
+    transform: translateY(0);
+    
+}
+
+.palette-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+}
+
+.color-box{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgb(166, 202, 5);
+    transition: transform 0.2s;
+
+}
+
+
+.color-box{
+    transform: translateY(-5px);
+}
+
+.color{
+    height: 120px;
+    cursor: pointer;
+}
+.color-info{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.hex-value{
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.copy-btn{
+    cursor: pointer;
+    color: #64748b;
+    transition: color 0.2s;
+
+}
+
+.copy-btn:hover{
+    color: #8d0977;
+}
+
+@media(max-width:768px){
+    .palette-container{
+        grid-template-columns: repeat(auto-fit,minmax,1fr);
+    }
+}

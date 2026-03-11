@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="log">PassX</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div id="container">
+        <h1>Password Manager</h1>
+        <p>hii we are thrilled to have u</p>
+        <h2>your password </h2>
+        <table id="table">
+    <thead>
+        <tr>
+            <th>Website</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <!-- <tbody>
+         <tr>
+            <td>
+                ash.com
+            </td>
+            <td>ash</td>
+            <td>ash@1123</td>
+            <td>delete</td>
+        </tr>
+         
+    </tbody> -->
+        </table>
+
+        <h2>add a password</h2>
+        
+            <form id="form" action="/submit" method="post">
+            <label for="Website">website</label>
+            <input type="text" id="Website" name="Website" required>
+            <br><br>
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username" required>
+            <br><br>
+            <label for="Password">Password</label>
+            <input type="text" id="Password" name="Password" required>
+            <br><br>
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
