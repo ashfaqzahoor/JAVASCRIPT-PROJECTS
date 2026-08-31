@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #9e7878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+.container{
+    background-color:rgb(114, 84, 84);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgb(177, 7, 30);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen{
+    display: none;
+    padding: 2rem;
+    text-align: center;
+
+}
+.screen.active{
+    display: block;
+}
+#start-screen>h1{
+    color: chocolate;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+#start-screen>p{
+    color: rgb(124, 81, 49);
+    margin-bottom: 30pxpx;
+    font-size: 1.2rem;
+}
+
+.quiz.header{
+    margin-bottom: 2rem;
+}
+
+#question-text{
+    color:chocolate;
+    font-size: 1.5rem;
+    line-height: 1.4;
+
+}
+.quiz-info{
+    display: flex;
+    justify-content: space-between;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.answer-btn{
+    background-color:rgb(36, 36, 184);
+    color: bisque;
+    border: 2px solid beige;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.answer-btn:hover{
+    background-color: #9e7878;
+    border-color: aqua;
+    box-shadow: magenta;
+
+}
+.answer-btn.correct{
+    background-color: bisque;
+    border-color: blueviolet;
+    color: green;
+}
+.answer-btn.incorrect{
+    background-color: rgb(168, 119, 58);
+    border-color: rgb(117, 47, 29);
+    color: red;
+}
+
+.progress-bar{
+    height: 10px;
+    background-color: burlywood;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.progress{
+    height: 100%;
+    background-color: #922f2f;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/*result*/
+#result-screen>h1{
+color: #3a0909;
+margin-bottom: 25px;
+
+}
+
+.result-info{
+    background-color: rgb(128, 14, 93);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 2opx;
+}
+.result-info>p{
+    font: caption;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#result-message{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #dd0505;
+}
+
+button{
+    height: fit-content;
+    width: fit-content;
+    background-color: #c8cfd4b0;
+    color: #d60a0af8;
+    border: 2px solid rgb(187, 164, 164);
+    border-radius: 20%;
+    margin-top: 10px;
+    cursor: pointer;
+transition: background-color 0.3s ease;
+
+}
+
+button:hover{
+    background-color: rgb(94, 10, 110);
+}
+
+
+/* responsive */
+@media(max-width:600px){
+    .screen{
+        padding: 1rem;
+
+    }
+    #start-screen>h1{
+        font-size: 2rem;
+    }
+}
